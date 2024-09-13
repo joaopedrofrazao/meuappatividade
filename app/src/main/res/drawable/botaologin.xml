@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Borda arredondada -->
+    <corners android:radius="20dp"/>
+
+    <!-- Gradiente de cores -->
+    <gradient
+        android:startColor="#1E203E"
+    android:endColor="#2A2727"
+    android:angle="90"
+    android:type="linear" />
+
+    <!-- Borda branca -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/ciano"/> <!-- Cor da borda -->
+</shape>

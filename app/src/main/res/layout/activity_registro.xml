@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="77dp">
+
+        <LinearLayout
+            android:id="@+id/caixa_branca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circularImageView"
+            android:layout_marginTop="220dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:ignore="NotSibling">
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textview_borda"
+                android:drawableEnd="@drawable/baseline_email_24"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- EditText para Senha -->
+            <EditText
+                android:id="@+id/editTextSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textview_borda"
+                android:drawableEnd="@drawable/baseline_vpn_key_24"
+                android:hint="Senha"
+                android:inputType="numberPassword"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- Botão Registrar-se (visível agora) -->
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:backgroundTint="@color/darkblue"
+                android:text="Registrar-se"
+                android:textColor="#FFFFFF"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/butback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/darkblue"
+            android:text="Voltar"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
